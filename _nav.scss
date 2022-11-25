@@ -1,0 +1,113 @@
+nav {
+  position: sticky;
+  top:0;
+  right: 0;
+  box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $black;
+  padding: .5rem .8rem;
+  @include lg {
+    padding: 0 3rem;
+  }
+
+  .flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .login {
+    display: none;
+    @include lg {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      color: $white;
+      div {
+        margin-left: 1rem;
+        &:hover{
+          color: lightgray;
+        }
+      }
+      .bi {
+        padding-left: 1rem;
+        color: $gray;
+      }
+    }
+  }
+
+  .right-expand {
+    display: none;
+    @include lg {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      width: 60%;
+      div {
+        border-right: 1px rgba(0,0,0,.2) solid;
+        padding: .5rem 1rem;
+        //height: 80px;
+        white-space: nowrap;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        &:hover{
+          background-color: lighten($black,20);
+        }
+      }
+    }
+
+  }
+
+
+  .logo {
+    color: $white;
+    font-size: 1.5rem;
+  }
+
+  .right {
+    color: $gray;
+    @include lg{
+      display: none;
+    }
+
+    .bi-search {
+      padding-right: 1rem;
+      font-size: 1.5rem;
+    }
+
+    .menu {
+      background-color: $gray;
+      border: 1px solid $gray;
+      padding: .25rem;
+      color: $white;
+      border-radius: .25rem;
+
+
+    }
+  }
+
+  .left {
+    color: $gray;
+    font-size: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include lg {
+      display: none;
+    }
+
+    .bi-person-fill {
+      padding-right: 1rem;
+    }
+  }
+}
+
+.fill {
+  height: 80px;
+  width: 100vw;
+}

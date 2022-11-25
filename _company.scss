@@ -1,0 +1,26 @@
+.company {
+  display: grid;
+  grid-template: repeat(2,1fr)/repeat(3,1fr);
+  padding: 3rem 1rem;
+  gap: .5rem;
+  text-align: center;
+  @include lg {
+    grid-template-columns: repeat(6,1fr);
+    grid-template-rows: 1fr;
+    padding:3rem 2rem;
+  }
+
+  .card {
+    border: 1px solid lightgray;
+    padding: 1rem;
+
+    img {
+      width: 50px;
+      border-radius: 50%;
+      @include lg{
+        width: 100px;
+      }
+    }
+  }
+
+}

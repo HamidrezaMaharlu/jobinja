@@ -1,0 +1,25 @@
+.about {
+  .blue {
+    color: lightskyblue;
+  }
+
+  .about-container {
+    display: grid;
+    gap: 1rem;
+    @include md{
+      grid-template: repeat(2,1fr)/repeat(2,1fr);
+    }
+    @include lg{
+      grid-template: repeat(1,1fr)/repeat(3,1fr);
+    }
+
+    div {
+      display: flex;
+      align-items: center;
+
+      p {
+        padding: 1rem;
+      }
+    }
+  }
+}
